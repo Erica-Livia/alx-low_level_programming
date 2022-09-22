@@ -11,19 +11,18 @@ int main(void)
 
 		char alph;
 
-
-
 			for (alph = 'a'; alph <= 'z'; ++alph)
 
 					{
 
-								if (alph == 'q')
+						if (alph ='q')
+	
+						continue;
+						else if (alph == 'e')	
+						continue;			
 
-												continue;
+						putchar(alph);
 
-										else if (alph == 'e')
-														continue;
-												putchar(alph);
 					}
 
 				putchar('\n');
