@@ -12,7 +12,7 @@ int main(void)
 	int number_right;
 
 
-	for (number_left = 1; number_right <= 89; number_left++)
+	for (number_left = 48; number_right <= 57; number_left++)
 
 	{
 
@@ -24,7 +24,7 @@ int main(void)
 
 			putchar (number_right);
 
-			if ((number_left == 88) && (number_right == 89))
+			if ((number_left == 58) && (number_right == 59))
 
 			{
 
