@@ -2,30 +2,32 @@
 
 /**
  * main - Entry point
- * Return: Always 0 (Sucess/correct)
+ * Return: Always 0 (Success/correct)
  */
 
 int main(void)
 
 {
-	char lower_case;
 
-	char upper_case;
+		char alph;
 
-	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
 
-	{
-		putchar(lower_case);
-	}
 
-	for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+			for (alph = 'a'; alph <= 'z'; ++alph)
 
-	{
-		putchar(upper_case);
-	}
+					{
 
-	putchar ('\n');
+								if (alph == 'q')
 
-	return (0);
+												continue;
+
+										else if (alph == 'e')
+														continue;
+												putchar(alph);
+					}
+
+				putchar('\n');
+
+					return (0);
 
 }
