@@ -1,7 +1,7 @@
 #include<unistd.h>
 
 /**
- * main - ok
+ * main - prints a sentence
  * Return : returns value 1
  */
 int main(void)
