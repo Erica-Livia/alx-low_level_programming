@@ -1,14 +1,9 @@
 #include <stdio.h>
 
 /**
- *
- *  *main - entry point
- *
- *   *
- *
- *    *Return: 0 after executing the command
- *
- *     */
+   *main - entry point
+   *Return: 0 after executing the command  
+   */
 
 int main(void)
 {
