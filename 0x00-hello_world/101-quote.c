@@ -1,7 +1,7 @@
 #include<unistd.h>
 
 /**
- * main - output point
+ * main - prints the standrad error
  * Return : returns value 1
  */
 
