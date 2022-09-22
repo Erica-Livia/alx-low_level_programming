@@ -14,11 +14,11 @@ int main(void)
 
 	if (n == 0)
 	{
-		pritnf("%i is zero\n", n);
+		printf("%i is zero\n", n);
 	}
 	else if (n < 0)
 	{
-		pritnf("%i is negative\n", n);
+		printf("%i is negative\n", n);
 	}
 	else if (n > 0)
 	{
