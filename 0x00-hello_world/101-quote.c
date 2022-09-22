@@ -1,7 +1,7 @@
 #include<unistd.h>
 
 /**
- * main - output point 
+ * main - output point
  * Return : returns value 1
  */
 
