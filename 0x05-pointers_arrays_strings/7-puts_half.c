@@ -1,41 +1,27 @@
 #include "main.h"
 
-
-
 /**
- *
- *  * puts2 - print alternating chars of string
- *
- *   * @str: string
- *
- *    * Return: void
- *
- *     */
-
-
-
-void puts2(char *str)
-
+ * puts_half - prints half of a string.
+ * @str: input string.
+ * Return: no return.
+ */
+void puts_half(char *str)
 {
+	int count = 0, i;
 
-		int i;
+	while (count >= 0)
+	{
+		if (str[count] == '\0')
+			break;
+		count++;
+	}
 
+	if (count % 2 == 1)
+		i = count / 2;
+	else
+		i = (count - 1) / 2;
 
-
-			i = 0;
-
-				while (str[i] != '\0')
-
-						{
-
-									if (i % 2 == 0)
-
-													_putchar(str[i]);
-
-											i++;
-
-												}
-
-					_putchar('\n');
-
+	for (i++; i < count; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 }
