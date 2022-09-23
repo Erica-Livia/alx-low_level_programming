@@ -1,35 +1,29 @@
 #include "main.h"
 
-#include <stdio.h>
-
-
-
 /**
- *
- *  * main - check the code
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
+ * rev_string - reverse string
+ * @s: string
+ * Return: void
+ */
 
-int main(void)
-
+void rev_string(char *s)
 {
+	int i, max, half;
+	char first, last;
 
-	    char *str;
-
-	        int len;
-
-
-
-		    str = "My first strlen!";
-
-		        len = _strlen(str);
-
-			    printf("%d\n", len);
-
-			        return (0);
-
-
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	max = i - 1;
+	half = max / 2;
+	while (half >= 0)
+	{
+		first = s[max - half];
+		last = s[half];
+		s[half] = first;
+		s[max - half] = last;
+		half--;
+	}
+}
