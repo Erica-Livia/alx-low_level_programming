@@ -1,42 +1,21 @@
 #include "main.h"
 
-
-
 /**
- *
- *  * puts2 - print alternating chars of string
- *
- *   * @str: string
- *
- *    * Return: void
- *
- *     */
+ * _strcpy - copies the string pointed to by src into dest
+ * @dest: destination
+ * @src: source
+ * Return: char with copy of string
+ */
 
-
-
-void puts2(char *str)
-
+char *_strcpy(char *dest, char *src)
 {
+	int i;
 
-		int i;
+	for (i = 0; *(src + i) != '\0'; i++)
+	{
+		dest[i] = *(src + i);
+	}
+	dest[i] = '\0';
 
-
-
-			i = 0;
-
-				while (str[i] != '\0')
-
-						{
-
-									if (i % 2 == 0)
-
-													_putchar(str[i]);
-
-											i++;
-
-												}
-
-					_putchar('\n');
-
+	return (dest);
 }
-
