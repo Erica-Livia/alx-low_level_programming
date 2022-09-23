@@ -1,35 +1,21 @@
 #include "main.h"
 
-#include <stdio.h>
-
-
-
 /**
- *
- *  * main - check the code
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
+ * puts2 - print alternating chars of string
+ * @str: string
+ * Return: void
+ */
 
-int main(void)
-
+void puts2(char *str)
 {
+	int i;
 
-	    char *str;
-
-	        int len;
-
-
-
-		    str = "My first strlen!";
-
-		        len = _strlen(str);
-
-			    printf("%d\n", len);
-
-			        return (0);
-
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+			_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
